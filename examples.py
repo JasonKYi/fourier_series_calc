@@ -5,7 +5,7 @@ This is the example file. It contains an example of the the Fourier Series calcu
 """
 
 # Defining the function (Note: the calculator imported sympy as sp. You can overwrite this with importing it yourself)
-func1 = Fourier_Func(sp.exp(x), 2)
+func1 = Fourier_Func(sp.sin(x)**2 * sp.cos(x)**2, 2)
 
 # coefficents is a method that does what the name describes, prints out the indicated coefficent in its general form
 def coefficent_example():
@@ -18,3 +18,5 @@ def series_example():
 # plot is the method that plots the calculated Fourier series
 def plot_example():
   func1.plot(2, printing = True)
+  
+series_example()
